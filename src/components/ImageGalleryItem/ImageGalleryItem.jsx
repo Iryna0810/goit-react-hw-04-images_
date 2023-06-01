@@ -4,6 +4,8 @@ import PropTypes from "prop-types";
 import {Item} from '../styled'
 import { useState } from 'react';
 
+
+
 export const ImageGalleryItem = ({image}) => {
   const [showModal, setShowModal] = useState(false);
 
