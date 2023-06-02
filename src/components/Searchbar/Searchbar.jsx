@@ -36,6 +36,7 @@ export const Searchbar = ({handleSearch}) => {
         )
 };
 
+
 Searchbar.propTypes = {
     handleSearch: PropTypes.func.isRequired,
 };
