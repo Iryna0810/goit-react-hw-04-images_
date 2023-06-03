@@ -43,7 +43,7 @@ export const ImageGallery = ({ searchImages, page }) => {
                 setIsLoading(false)
             })
 
-    }, [currentPage]);
+    }, [currentPage, searchImages]);
 
     const handleMoreLoad = () => {
         setCurrentPage(prev => prev + 1)

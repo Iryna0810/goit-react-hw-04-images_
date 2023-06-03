@@ -4,7 +4,7 @@ import { useState } from "react";
 
 export const App = () => {
   const [searchImages, setSearchImages] = useState('');
-  const [page, setPage] = useState(1);
+  const page = 1;
 
  const handleSearch = (searchImages) => {
    setSearchImages(searchImages);
