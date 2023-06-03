@@ -20,7 +20,7 @@ export const ImageGallery = ({ searchImages, page }) => {
         setCurrentPage(1);
         serchPhoto(searchImages, page)
             .then(({ data }) => {
-                setImages(images => [...images, ...data.hits]);
+                setImages(data.hits);
                 setCurrentImages(data.hits)
             })
             .catch((error) => setError(error))
@@ -43,7 +43,7 @@ export const ImageGallery = ({ searchImages, page }) => {
                 setIsLoading(false)
             })
 
-    }, [currentPage, searchImages]);
+    }, [currentPage]);
 
     const handleMoreLoad = () => {
         setCurrentPage(prev => prev + 1)
