@@ -43,6 +43,7 @@ export const ImageGallery = ({ searchImages, page }) => {
                 setIsLoading(false)
             })
 
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [currentPage]);
 
     const handleMoreLoad = () => {
