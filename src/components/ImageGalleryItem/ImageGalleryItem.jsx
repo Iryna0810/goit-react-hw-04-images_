@@ -11,6 +11,7 @@ export const ImageGalleryItem = ({ image }) => {
     setShowModal(!showModal)
   }
 
+
   const { id, webformatURL, largeImageURL } = image;
 
   return (
